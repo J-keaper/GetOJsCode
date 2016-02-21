@@ -19,7 +19,7 @@ def login(id,password):
     opener=urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie))
     urllib2.install_opener(opener)
     headers={"User-Agent":"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36"}
-    request=urllib2.Request(login_url,data,headers)
+    request=urllib2.Request(login_url,data,headers)#POJ不检查headers，可以不验证
     response=urllib2.urlopen(request).read()
     #print response
     if id in response:
