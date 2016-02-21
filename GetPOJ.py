@@ -92,9 +92,9 @@ def run(id,password,dirpath):
         print status_url
         
         
-#id=raw_input("Please input your User ID:")
-#password=getpass.getpass("Please input your password:")
-#dirpath=raw_input("Please input direetory:")
-#run(id,password,dirpath)
-run("jiajiawang","1407084125wang","E:\poj")
+id=raw_input("Please input your User ID:")
+password=getpass.getpass("Please input your password:")
+dirpath=raw_input("Please input direetory:")
+run(id,password,dirpath)
+#run("jiajiawang","******","E:\poj")
 
