@@ -84,7 +84,7 @@ def run(id,password,dirpath):
             tmp=1
             while(os.path.exists(dirpath+'\\'+pro_name)):
                 tmp+=1
-                pro_name=pro_id+' '+title+' ('+str(tmp)+')'+code[1]
+                pro_name=pro_id+' '+title+'('+str(tmp)+')'+code[1]
             print u"正在保存"+pro_name+"..."
             f=open(pro_name,"w")
             f.write(code[0].encode('utf-8'))            
